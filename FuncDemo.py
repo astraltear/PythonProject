@@ -11,3 +11,10 @@ def foo2(*args):
     print("\n")
 
 foo2(1,2,3,4)
+
+def foo3(**dic): 
+    for (k,v) in dic.items():
+        print(k, ":", v) 
+    print()
+
+foo3(a=1,b=2,c=3)
