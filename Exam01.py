@@ -48,3 +48,18 @@ print myList2
 print myList3
 
 print 'd' in myList2   
+
+
+text = "abcabcde"
+myList = list(text)
+print myList
+
+myTuple = tuple(text)
+print myTuple
+
+mySet = set(text)
+print mySet
+
+myDic = {'1class':98, '2class':85, '3class':95}
+for k,v in myDic.items():
+    print(k,v)
