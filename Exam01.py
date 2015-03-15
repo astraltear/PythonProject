@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import sys
 
 print "Hello World",  25+35/6, 3+5, 2432423423-23423463646345353, 452432*2323, "가나다"+"라마바"
 print "Save World", 100-24 % 3
@@ -63,3 +63,13 @@ print mySet
 myDic = {'1class':98, '2class':85, '3class':95}
 for k,v in myDic.items():
     print(k,v)
+    
+print sys.getdefaultencoding()
+
+tinydict = {'name':'john',"code":6705,"dept":"dev"}
+print tinydict['name']
+print tinydict, tinydict.keys(), tinydict.values()
+
+fruits = ['kiwi','banana','orange','grape']
+for index in range(len(fruits)):
+    print fruits[index]
