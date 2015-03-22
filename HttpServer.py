@@ -5,7 +5,7 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
-        self.wfile.write('<html><body>Hello, world !</body></html>')
+        self.wfile.write('<html><body>RequestHandle, world !</body></html>')
         return
     
 if __name__ == '__main__':

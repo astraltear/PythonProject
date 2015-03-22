@@ -1,15 +1,20 @@
-from flask import Flask
+import flask 
 from flask.templating import render_template
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 
-@app.route("/home")
-def home():
-    return "home!";
 
 @app.route("/")
 def root():
     return "index page!!!!"
+
+@app.route("/hello")
+def hello():
+    return "hello!!!"
+
+@app.route("/home")
+def home():
+    return "home!";
 
 @app.route("/login/<login_id>")
 def login(login_id):

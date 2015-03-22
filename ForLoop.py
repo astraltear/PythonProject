@@ -3,7 +3,7 @@ Created on 2014. 2. 26.
 
 @author: Choi
 '''
-a ="Hello World"
+a ="RequestHandle World"
 for c in a:
     print c
 

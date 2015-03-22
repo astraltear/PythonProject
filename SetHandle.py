@@ -4,7 +4,7 @@ Created on 2014. 2. 20.
 @author: Choi
 '''
 s = set([3,5,90,23])
-t = set("Hello")
+t = set("RequestHandle")
 
 print t
 
