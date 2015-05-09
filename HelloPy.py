@@ -11,6 +11,11 @@ def greeting(hour,morning_msg="hello"):
     elif hour < 12:
         pass
     
+    else:
+        print morning_msg
+    
 
 
 greeting(7)
+greeting(14, "test")
+

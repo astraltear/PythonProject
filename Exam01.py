@@ -73,3 +73,9 @@ print tinydict, tinydict.keys(), tinydict.values()
 fruits = ['kiwi','banana','orange','grape']
 for index in range(len(fruits)):
     print fruits[index]
+    
+    
+    
+print range(0,10,2)
+
+

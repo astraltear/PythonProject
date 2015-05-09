@@ -54,6 +54,15 @@ def printLol(theList):
 
 print printLol(movies)
 
+msgList=["orange","banana","kiwi","tomato"]
+
+msgList.insert(3, "grape")
+
+print msgList.count("orange")
+
+for msg in msgList:
+    print "in for:"+msg
+
 '''
 for each_item in movies:
     if isinstance(each_item, list):
