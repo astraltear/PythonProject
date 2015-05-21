@@ -59,6 +59,9 @@ msgList=["orange","banana","kiwi","tomato"]
 msgList.insert(3, "grape")
 
 print msgList.count("orange")
+print msgList.index("orange")
+print msgList.pop(2)
+print msgList
 
 for msg in msgList:
     print "in for:"+msg
