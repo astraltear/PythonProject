@@ -1,4 +1,4 @@
-import time
+
 
 logFile = open("filecheck.log",'w')
 
@@ -8,14 +8,30 @@ try:
 except Exception as e:      
         logFile.write(e.message)
 
+else:
+    print "else"
+    
+finally:
+    print "finally"
+
 logFile.close()
 
-b =["Dave","Mark","Ann","Phil"]
+try:
+    2/1
+except TypeError:
+    print "TypeError"
 
-if b.__len__() == 0 :
-    print "111"
+else:
+    print "else"
 
-for name in b:
-    time.sleep(5)
-    print name
-    
+finally:
+    print "finally"
+
+
+def RaiseException():
+    raise NameError
+
+try:
+    RaiseException()
+except:
+    print "raise Error"

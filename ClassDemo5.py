@@ -11,3 +11,4 @@ woori = Account("WOORI")
 print kb.name
 print woori.name
     
+print Account.num_account

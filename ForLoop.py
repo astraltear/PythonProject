@@ -51,4 +51,17 @@ def add10(i):
 addList = map(add10,L)
 print addList
 
+
+import time
+b =["Dave","Mark","Ann","Phil"]
+
+if b.__len__() == 0 :
+    print "111"
+
+for name in b:
+    time.sleep(5)
+    print name
+    
+
+
        
