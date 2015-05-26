@@ -1,8 +1,5 @@
-'''
-Created on 2014. 2. 26.
+# -*- coding: utf-8 -*-
 
-@author: Choi
-'''
 a ="RequestHandle World"
 for c in a:
     print c
@@ -35,3 +32,23 @@ else:
 for n in [2,3]:
     for i in range(1,10):
         print str(n)+"*"+str(i)+"="+str(n*i)
+        
+        
+def GetBiggerThan20(i):
+    return i > 20
+
+L=[10,20,30,40]
+
+filterdList = filter(GetBiggerThan20,L)  # iterator를 반환
+print filterdList
+
+mapList =map(GetBiggerThan20,L)  # function 연산을 수행한다. 
+print mapList
+
+def add10(i):
+    return  i+10
+
+addList = map(add10,L)
+print addList
+
+       
