@@ -15,3 +15,9 @@ while year <= numyears:
     print >> f, year,principal
     year +=1
 f.close()
+
+with open('./FuncDemo.py') as f:
+    print f.readlines()
+    print f.closed
+    
+print f.closed
