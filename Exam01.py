@@ -78,4 +78,9 @@ for index in range(len(fruits)):
     
 print range(0,10,2)
 
+age1=20
+name1="swaroop"
+
+print '{} was {} years old when he wrote this book'.format(name1, age1)
+print '{0:.3f}'.format(1.0/3)
 

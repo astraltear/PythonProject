@@ -28,3 +28,19 @@ print str2
 
 eachLine="I tell you, theres no such thing as a flying circus."
 print eachLine.find(":") 
+
+str3 = 'python is powerful'
+print (str3.endswith('ful'))
+print (str3.endswith('M'))
+print (str3.endswith('ful',10,-1))
+print ( str3.find('sub') )  
+#print ( str3.index('sub') ) # exception invoke
+print ( str3.find('l') )
+print ( str3.find('l',5,-1) )
+print ( str3.isalnum() )
+
+print ( ".".join("iterable") )
+print ( "iterable".upper() )
+
+
+

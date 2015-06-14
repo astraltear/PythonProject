@@ -63,5 +63,21 @@ for name in b:
     print name
     
 
+number=23
+running=True
+
+while running:
+    guess = int(raw_input("Enter an integer:"))
+    
+    if guess==number:
+        print "OK"
+        running=False
+    elif guess < number:
+        print "No higher than"
+    else :
+        print "No lower than"
+
+else:
+    print "the while loop is over."
 
        
