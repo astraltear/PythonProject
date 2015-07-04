@@ -74,3 +74,13 @@ for each_item in movies:
     else:
         print "outer:"+str(each_item)
 '''
+    
+    
+v = ['w','x','y','z']
+[a,b,c,d]=v
+
+print a,b,c,d
+
+[MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY] = range(7)
+
+print MONDAY,TUESDAY
