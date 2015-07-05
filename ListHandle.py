@@ -84,3 +84,20 @@ print a,b,c,d
 [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY] = range(7)
 
 print MONDAY,TUESDAY
+
+li_99 = [2,8,16,5]
+li_98=[elem*2 for elem in li_99]
+print(li_98)
+
+params = {"server":"mpilgrim", "database":"master", "uid":"sa", "pwd":"secret"}
+print params.items()
+
+paramsKeys = [k for k,v in params.items()]
+print paramsKeys
+
+paramsVal = [v for k,v in params.items()]
+print paramsVal
+
+li_97=["a","mpilgrimm","foo","b","c","b","d","d"]
+print [elem for elem in li_97 if len(elem) >1]
+print [elem for elem in li_97 if li_97.count(elem)== 1]
