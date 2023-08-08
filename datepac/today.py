@@ -10,8 +10,8 @@ def getYear():
 def fullDate():
     return "%s-%s-%s" % (getDate(), getMonth(), getYear())
 
-print "today module has called!!"
+print ("today module has called!!")
 
 if __name__ == '__main__':
-    print "%s-%s-%s" % (getDate(), getMonth(), getYear())
+    print ("%s-%s-%s" % (getDate(), getMonth(), getYear()))
     pass
