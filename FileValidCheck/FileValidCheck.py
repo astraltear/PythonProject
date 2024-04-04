@@ -1,4 +1,4 @@
-# -*- coding: euc-kr -*-
+# -*- coding: utf-8 -*-
 import DBUtil
 from ftplib import FTP
 import smtplib
@@ -41,11 +41,11 @@ def dirSearch(header,file,void,ftp,isMobile,logFile):
         if dbFileName not in currentFtpList :
             dbFileName = dbFileName.replace("mp3","MP3")
             if dbFileName not in currentFtpList :
-                #print void,dbFileName,prefix    # ÆÄÀÏÀÌ Á¸ÀçÇÏÁö ¾Ê´Â´Ù. 
+                #print void,dbFileName,prefix    # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â´ï¿½. 
                 logFile.write("["+void+"]["+prefix+"]["+dbFileName+"]\n")
             
     except Exception, e:
-        #print e,prefix    # °æ·Î°¡ Á¸ÀçÇÏÁö ¾Ê´Â´Ù. 
+        #print e,prefix    # ï¿½ï¿½Î°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â´ï¿½. 
         logFile.write(e)
 
 ftp_down = FTP()
@@ -98,7 +98,7 @@ for line in lines:
         
 if isError:
     s = smtplib.SMTP(MAIL_SERVER)
-    message = 'Subject: %s\n\n%s' % ("ÆÄÀÏ´©¶ô", mSg)
+    message = 'Subject: %s\n\n%s' % ("ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½", mSg)
     for sender in senderMail:
         s.sendmail("zert@yourdomain.com",sender,message)
     
