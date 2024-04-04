@@ -10,4 +10,4 @@ f.close()
 f2 = open('colors','rb')
 colors2 = pickle.load(f2)   # read binary
 f2.close()
-print colors2
+print( colors2)

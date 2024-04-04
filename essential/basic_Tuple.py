@@ -15,8 +15,8 @@ for line in open(filename):
     portfolio.append(stock)
 
 for man in portfolio:
-    print man
-    print man[0], man[1], man[2]
+    print( man)
+    print( man[0], man[1], man[2])
 
 for name, shares, price in portfolio:
-    print "===>", name, shares,price
+    print( "===>", name, shares,price)

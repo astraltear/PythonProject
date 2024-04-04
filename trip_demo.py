@@ -30,4 +30,4 @@ def trip_cost(city,days,spending_money):
     return hotel_sum+car_cost+plane_cost+spending_money
 
 
-print trip_cost('Los Angeles',5,600)
+print( trip_cost('Los Angeles',5,600))

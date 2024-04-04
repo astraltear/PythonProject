@@ -9,23 +9,23 @@ except Exception as e:
         logFile.write(e.message)
 
 else:
-    print "else"
+    print( "else" )
     
 finally:
-    print "finally"
+    print( "finally")
 
 logFile.close()
 
 try:
     2/1
 except TypeError:
-    print "TypeError"
+    print( "TypeError")
 
 else:
-    print "else"
+    print( "else" )
 
 finally:
-    print "finally"
+    print( "finally" )
 
 
 def RaiseException():
@@ -34,4 +34,4 @@ def RaiseException():
 try:
     RaiseException()
 except:
-    print "raise Error"
+    print( "raise Error" )

@@ -1,11 +1,52 @@
 # -*- coding: utf-8 -*-
-d={'jan':1,'feb':2,'mar':3,'apr':4,'aug':8,'dec':12}
 
-print( d['jan'], d['feb'], d['mar'] )
+'''
+Created on 2014. 2. 26.
+
+@author: Choi
+'''
+stock={
+       "name":"GPGP",
+       "shares":100,
+       "price":490.10
+       }
+
+print(stock["name"] )
+
+stock["name"]="AAAA"
+
+print(stock["name"])
+
+prices ={
+         "GOOG" : 490.10,
+         "AAPL" : 123.50,
+         "IBM"  : 91.50,
+         "MSFT" :  52.13,
+         "SCOX" : 34.30
+}
+
+if "SCOX" in prices:
+    p = prices["SCOX"]
+else: 
+    p = 0.0
+    
+print(p)
+
+p = prices.get("SCOXE",0.0)
+print(p)
+
+del prices["MSFT"]
+
+print(list(prices))
+
+
+dic_obj={'jan':1,'feb':2,'mar':3,'apr':4,'aug':8,'dec':12}
+
+print( dic_obj['jan'], dic_obj['feb'], dic_obj['mar'] )
 
 d2 = dict(jan=1,feb=2,mar=3,apr=4,may=5,jun=6,jul=7,aug=8,sep=9,oct=10,nov=11,dec=12)
 
-print(d2)
+print("=================>",d2)
 
 month_names=[('jan',1),('feb',2),('mar',3),('apr',4),('may',5),('jun',6),('jul',7),('aug',8),('sep',9),('oct',10),('nov',11),('dec',12)]
 print(dict(month_names))

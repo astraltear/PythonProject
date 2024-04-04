@@ -45,7 +45,7 @@ def get_class_average(students):
         sum+=get_average(i)
     return sum/len(students), get_letter_grade(sum/len(students))
     
-print get_class_average(student)
+print( get_class_average(student) )
 
 #print get_letter_grade(get_average(lloyd))
 

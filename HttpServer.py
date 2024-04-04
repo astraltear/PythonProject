@@ -9,6 +9,6 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         return
     
 if __name__ == '__main__':
-    print "Listening on port 8088:"
+    print( "Listening on port 8088:")
     server = BaseHTTPServer.HTTPServer(('',8088),MyHandler)
     server.serve_forever()

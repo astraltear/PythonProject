@@ -9,11 +9,11 @@ f.close()
 
 
 readFile = open("output.txt","r")
-print readFile.read()
-print readFile.readline()
+print( readFile.read())
+print( readFile.readline())
 
 
 with open("text.txt","w") as textfile:
     textfile.write("Success!!")
 
-print textfile.closed
+print( textfile.closed)

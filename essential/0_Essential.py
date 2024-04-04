@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 principal = 1000
 rate = 0.5
 numyears = 5
@@ -11,7 +12,7 @@ while year <=numyears:
 
 person_tuple="tupleA",
 
-print(person_tuple)
+print("person_tuple", person_tuple)
 
 
 for n in range(10):
@@ -19,7 +20,7 @@ for n in range(10):
 
 c={"GOOG":490.10 , "IBM":91.50, "AAPL":123.15 }
 for key in c:
-    print (key)
+    print ("key::", key)
 
 for item in c.items():
     print ("item:",item)
@@ -177,16 +178,5 @@ db['key'] = Stack()
 obj4 = db['key']
 print("---->",obj4)
 db.close()
-
-
-
-
-
-
-
-
-
-
-
 
 

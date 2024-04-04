@@ -8,9 +8,9 @@ toport = 40
 for i in range(fromport, toport):
     s = socket(AF_INET,SOCK_STREAM)
     if s.connect_ex((rhost,i)) == 0:
-        print i , "is open"
+        print( i , "is open")
     else:
-        print i, "is not open"
+        print( i, "is not open")
     s.close()
     
-print "finish"
+print( "finish")

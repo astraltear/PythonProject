@@ -2,7 +2,7 @@
 from __builtin__ import str
 
 def foo(a, b=3):
-    print('a:', a,'b:', b )
+    print(('a:', a,'b:', b ) )
 
 foo(1,2)
 foo(7)
@@ -10,15 +10,15 @@ foo(b=90, a=20)
 
 def foo2(*args):
     for i in args:
-        print i
-    print("\n")
+        print( i)
+    print(("\n"))
 
 foo2(1,2,3,4)
 
 def foo3(**dic): 
     for (k,v) in dic.items():
-        print(k, ":", v) 
-    print()
+        print((k, ":", v) )
+    print(())
 
 foo3(a=1,b=2,c=3)
 
@@ -33,7 +33,7 @@ def union2(*ar):
     return res
 
 alist = union2("HAN","EGG","SPAM")
-print alist
+print( alist )
 
 # **를 사용하면 정의되지 않은 인수를 사전형식으로 전달
 def userURIBuilder(server, port, **user):
@@ -42,6 +42,6 @@ def userURIBuilder(server, port, **user):
         str+= key+"="+user[key]+"&"
     return str
 
-print userURIBuilder("test.com", "8088",id='user',passwd="1234",name='mike',age='20')
+print( userURIBuilder("test.com", "8088",id='user',passwd="1234",name='mike',age='20') )
 
 

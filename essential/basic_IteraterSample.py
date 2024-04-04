@@ -4,7 +4,7 @@ s='abc'
 
 it = iter(s)
 
-print it
+print ( it )
     
 for i in it:
-    print i
+    print( i )

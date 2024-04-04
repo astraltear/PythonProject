@@ -1,5 +1,5 @@
 import  datetime
 from datetime import date
 
-print date.today()
-print datetime.date.today()
+print( date.today())
+print( datetime.date.today())
