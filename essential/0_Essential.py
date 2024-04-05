@@ -73,10 +73,10 @@ s.push("Dave")
 s.push(34)
 s.push([7,8,9,])
 
-print (s)
-print(s.pop())
+print ("s===>",s)
+print("s.pop()::", s.pop())
 del s
-#print (s)
+# print ("delete s::",s) error 
 
 import sys
 val_a=36
