@@ -119,7 +119,7 @@ print( purify([1,2,3,4,5,6]) )
 t = [1, 2, 3, 1, 2, 5, 6, 7, 8]
 s = [1, 2, 3]
 out_list = list(set(t))
-print( out_list )
+print( "out_list",out_list )
 
 minus_list = list(set(t) - set(s))
 print( minus_list )
